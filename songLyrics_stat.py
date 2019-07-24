@@ -9,9 +9,9 @@ def words_separator(sentences):
     return words
     
 #function to store the values in the dictionary
-def lyrics_to_frequencies(words_separator(lyrics)):
+def lyrics_to_frequencies(lyrics):
     myDict = {}
-    for word in myDict:
+    for word in lyrics:
         if word in myDict:
             myDict[word] += 1
         else:
@@ -51,4 +51,4 @@ Because she loves you
 And you…"""
 
 #printing frequencies of words in DEMO LYRICS
-print(lyrics_to_frequencies(demo_lyrics))
+print(lyrics_to_frequencies(words_separators(demo_lyrics)))
